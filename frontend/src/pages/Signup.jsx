@@ -1,10 +1,10 @@
 import { useState } from "react";
 import signupImg from '../assets/images/signup.gif';
-import avatar from '../assets/images/doctor-img01.png';
 import {Link , useNavigate } from 'react-router-dom';
 import uploadImageToCloudinary from "../utils/uploadCloudinary";
 import { BASE_URL } from "../config";
-import {toast} from 'react-toastify'
+import {toast} from 'react-toastify';
+import HashLoader from 'react-spinners/HashLoader';
 
 
 const Signup = () => {
@@ -178,7 +178,7 @@ const Signup = () => {
             <div className="mt-7">
               <button disabled={loading && true} 
               type="submit" className="w-full bg-primaryColor text-white text-[18px] leading-[30px] rounded-lg px-4 
-              py-3">{loading ? <HashLoader size={35} color="#ffffff"/> : 'sign up'}
+              py-3">{loading ? ( <HashLoader size={35} color="#ffffff"/> ) :(" Sign Up ")}
               </button>
             </div>
 
