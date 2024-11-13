@@ -88,6 +88,7 @@ const Header = () => {
                 <img src={user?.photo} className='w-full rounded-full' alt="" />
               </figure>
             </Link>
+            <h2>{user?.name}</h2>
           </div>
           )  : ( 
           <Link to="/login">
