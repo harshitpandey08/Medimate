@@ -47,7 +47,7 @@ const DoctorAbout = ({name, about, qualifications,  experiences}) => {
             </span>
             <p className="text-[16px] leading-6 font-medium text-textColor">{item.position}</p>
             <p className="text-[14px] leading-5 font-medium text-textColor">{item.hospital}</p>
-        </li>
+          </li>
         ))}
        </ul>
       </div>
